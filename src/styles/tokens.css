@@ -1,0 +1,57 @@
+:root {
+  /* Materials */
+  --color-linen: #f5f0e8;
+  --color-warm-white: #fbf8f3;
+  --color-limestone: #e8dfd2;
+  --color-sand: #d8c7b2;
+  --color-oak: #9b7653;
+  --color-driftwood: #b8aa99;
+  --color-charcoal: #292723;
+  --color-muted-text: #6f6a63;
+  --color-morning-light: #f2dcb8;
+  --color-nova-gold: #d6ad68;
+
+  /* Typography */
+  --font-heading: var(--font-playfair), Georgia, serif;
+  --font-body: var(--font-inter), Arial, sans-serif;
+
+  /* Content widths */
+  --content-narrow: 42rem;
+  --content-standard: 72rem;
+  --content-wide: 90rem;
+
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+  --space-9: 6rem;
+  --space-10: 8rem;
+
+  /* Corners */
+  --radius-small: 0.5rem;
+  --radius-medium: 1rem;
+  --radius-large: 1.5rem;
+  --radius-pill: 999px;
+
+  /* Shadows */
+  --shadow-soft: 0 1rem 3rem rgba(56, 47, 38, 0.08);
+  --shadow-card: 0 0.75rem 2rem rgba(56, 47, 38, 0.06);
+
+  /* Motion */
+  --duration-fast: 180ms;
+  --duration-standard: 420ms;
+  --duration-slow: 800ms;
+  --ease-calm: cubic-bezier(0.22, 1, 0.36, 1);
+
+  /* Navigation */
+  --nav-height-mobile: 4.75rem;
+  --nav-height-desktop: 5.5rem;
+
+  /* Touch targets */
+  --touch-target: 2.75rem;
+}

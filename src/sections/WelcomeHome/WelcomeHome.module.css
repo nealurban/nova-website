@@ -1,0 +1,181 @@
+.welcomeHome {
+  position: relative;
+  min-height: 100svh;
+  overflow: hidden;
+  isolation: isolate;
+  background: var(--color-linen);
+}
+
+.heroImage {
+  z-index: -3;
+  object-fit: cover;
+  object-position: 58% center;
+}
+
+/*
+  Keeps the photograph warm and softened while preserving
+  the natural light, furniture, and Maverick.
+*/
+.imageTreatment {
+  position: absolute;
+  z-index: -2;
+  inset: 0;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(245, 240, 232, 0.98) 0%,
+      rgba(245, 240, 232, 0.91) 24%,
+      rgba(245, 240, 232, 0.55) 45%,
+      rgba(245, 240, 232, 0.12) 68%,
+      rgba(245, 240, 232, 0.04) 100%
+    ),
+    rgba(232, 223, 210, 0.12);
+}
+
+.contentContainer {
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  padding-top: var(--nav-height-desktop);
+  padding-bottom: var(--space-7);
+}
+
+.content {
+  width: min(100%, 34rem);
+  padding-top: clamp(3rem, 8vh, 7rem);
+  animation: gentleArrival var(--duration-slow) var(--ease-calm) both;
+}
+
+.headline {
+  max-width: 10ch;
+  font-size: clamp(3.5rem, 6.2vw, 6.75rem);
+  letter-spacing: -0.035em;
+  text-wrap: balance;
+}
+
+.copy {
+  max-width: 32rem;
+  margin-top: var(--space-5);
+  color: var(--color-charcoal);
+  font-size: clamp(1rem, 1.25vw, 1.125rem);
+  line-height: 1.65;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-5);
+  margin-top: var(--space-6);
+}
+
+.primaryAction {
+  min-height: var(--touch-target);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.875rem 1.4rem;
+  border-radius: var(--radius-pill);
+  background: var(--color-charcoal);
+  color: var(--color-warm-white);
+  font-size: 0.9rem;
+  transition:
+    transform var(--duration-fast) var(--ease-calm),
+    background var(--duration-fast) ease;
+}
+
+.primaryAction:hover {
+  transform: translateY(-1px);
+  background: #171613;
+}
+
+.secondaryAction {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-height: var(--touch-target);
+  font-size: 0.9rem;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.25rem;
+}
+
+@keyframes gentleArrival {
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 48rem) {
+  .welcomeHome {
+    min-height: 100svh;
+  }
+
+  .heroImage {
+    object-position: 64% center;
+  }
+
+  .imageTreatment {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(245, 240, 232, 0.88) 0%,
+        rgba(245, 240, 232, 0.68) 42%,
+        rgba(245, 240, 232, 0.2) 68%,
+        rgba(245, 240, 232, 0.06) 100%
+      ),
+      linear-gradient(
+        90deg,
+        rgba(245, 240, 232, 0.82) 0%,
+        rgba(245, 240, 232, 0.38) 72%,
+        transparent 100%
+      );
+  }
+
+  .contentContainer {
+    align-items: flex-start;
+    padding-top: calc(var(--nav-height-mobile) + 5rem);
+    padding-bottom: var(--space-6);
+  }
+
+  .content {
+    width: min(100%, 25rem);
+    padding-top: 0;
+  }
+
+  .headline {
+    max-width: 9ch;
+    font-size: clamp(3rem, 13vw, 4.4rem);
+    line-height: 1;
+  }
+
+  .copy {
+    max-width: 22rem;
+    margin-top: var(--space-4);
+    font-size: 0.975rem;
+    line-height: 1.55;
+  }
+
+  .actions {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: var(--space-3);
+    margin-top: var(--space-5);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .content {
+    animation: none;
+  }
+
+  .primaryAction {
+    transition: none;
+  }
+}
