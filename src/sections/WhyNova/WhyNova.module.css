@@ -1,0 +1,32 @@
+.section {
+  background: var(--color-linen);
+  padding: clamp(4rem, 7vw, 6.5rem) 0 clamp(7rem, 10vw, 10rem);
+}
+
+.content {
+  max-width: 46rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.eyebrow {
+  letter-spacing: 0.18em;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--color-nova-gold);
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  line-height: 1.1;
+  margin-bottom: 2rem;
+}
+
+.text {
+  max-width: 40rem;
+  margin-inline: auto;
+  font-size: 1.3rem;
+  line-height: 1.8;
+  color: rgba(41, 39, 35, 0.75);
+}

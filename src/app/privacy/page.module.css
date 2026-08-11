@@ -1,0 +1,157 @@
+.page {
+  min-height: 100svh;
+  padding: clamp(2rem, 5vw, 4rem) 0 clamp(5rem, 8vw, 8rem);
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(255, 255, 255, 0.7),
+      transparent 32rem
+    ),
+    var(--color-linen);
+}
+
+.backLink {
+  width: fit-content;
+  min-height: var(--touch-target);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin-bottom: 1.5rem;
+  color: rgba(41, 39, 35, 0.72);
+  font-size: 0.9rem;
+  transition: color var(--duration-fast) ease;
+}
+
+.backLink:hover {
+  color: var(--color-charcoal);
+}
+
+.card {
+  max-width: 58rem;
+  margin-inline: auto;
+  padding: clamp(2rem, 6vw, 5rem);
+  border: 1px solid rgba(41, 39, 35, 0.08);
+  border-radius: clamp(1.25rem, 3vw, 2rem);
+  background: rgba(255, 255, 255, 0.58);
+  box-shadow: 0 1.5rem 4rem rgba(41, 39, 35, 0.07);
+}
+
+.logo {
+  display: inline-flex;
+  margin-bottom: clamp(3rem, 6vw, 5rem);
+}
+
+.logo img {
+  display: block;
+  width: 10rem;
+  height: auto;
+}
+
+.header {
+  padding-bottom: clamp(2rem, 4vw, 3rem);
+  border-bottom: 1px solid rgba(41, 39, 35, 0.12);
+}
+
+.eyebrow {
+  margin-bottom: 1rem;
+  color: var(--color-nova-gold);
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.title {
+  max-width: 12ch;
+  font-size: clamp(3rem, 7vw, 5.5rem);
+  letter-spacing: -0.035em;
+}
+
+.updated {
+  margin-top: 1.25rem;
+  color: rgba(41, 39, 35, 0.58);
+  font-size: 0.9rem;
+}
+
+.introduction {
+  max-width: 45rem;
+  padding: clamp(2rem, 5vw, 4rem) 0;
+  color: rgba(41, 39, 35, 0.82);
+  font-size: clamp(1.05rem, 1.5vw, 1.2rem);
+  line-height: 1.85;
+}
+
+.sections {
+  display: grid;
+  gap: 2.25rem;
+}
+
+.policySection {
+  max-width: 46rem;
+}
+
+.policySection h2 {
+  margin-bottom: 0.75rem;
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.policySection p {
+  color: rgba(41, 39, 35, 0.72);
+  font-size: 0.98rem;
+  line-height: 1.8;
+}
+
+.policySection a {
+  color: var(--color-charcoal);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2rem;
+}
+
+.backLink:focus-visible,
+.logo:focus-visible,
+.policySection a:focus-visible {
+  border-radius: 0.25rem;
+  outline: 2px solid var(--color-nova-gold);
+  outline-offset: 4px;
+}
+
+@media (max-width: 48rem) {
+  .page {
+    padding-top: 1.25rem;
+  }
+
+  .card {
+    padding: 2rem 1.35rem 3rem;
+    border-radius: 1.25rem;
+  }
+
+  .logo {
+    margin-bottom: 3rem;
+  }
+
+  .logo img {
+    width: 9rem;
+  }
+
+  .title {
+    font-size: clamp(3rem, 14vw, 4.3rem);
+  }
+
+  .introduction {
+    padding: 2rem 0 2.75rem;
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+
+  .sections {
+    gap: 2rem;
+  }
+
+  .policySection p {
+    font-size: 0.95rem;
+    line-height: 1.75;
+  }
+}

@@ -7,7 +7,7 @@ export default function WelcomeHome() {
     <section className={styles.welcomeHome}>
       <Image
         src="/images/hero/nova-hero.jpg"
-        alt="A peaceful, sunlit coastal living room with a Golden Retriever resting on the rug."
+       alt="A peaceful coastal living room in warm morning light, with a Golden Retriever resting on the rug."
         fill
         priority
         sizes="100vw"

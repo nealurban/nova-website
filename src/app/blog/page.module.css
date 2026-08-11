@@ -1,0 +1,21 @@
+.contentLayout {
+  width: min(100% - 3rem, 80rem);
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 20rem;
+  gap: 4rem;
+  align-items: start;
+}
+
+@media (max-width: 64rem) {
+  .contentLayout {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
+
+@media (max-width: 48rem) {
+  .contentLayout {
+    width: min(100% - 2rem, 36rem);
+  }
+}

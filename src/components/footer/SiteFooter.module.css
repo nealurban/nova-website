@@ -1,0 +1,111 @@
+.footer {
+  background: #e9e1d5;
+  padding: clamp(4.75rem, 7vw, 7rem) 0 2rem;
+}
+
+.top {
+  max-width: 42rem;
+}
+
+.logo {
+  display: inline-flex;
+  transform: scale(1.04);
+  transform-origin: left center;
+}
+
+.message {
+  max-width: 11ch;
+  margin-top: 1.75rem;
+  color: var(--color-charcoal);
+  font-family: var(--font-heading);
+  font-size: clamp(2.35rem, 4.1vw, 4.25rem);
+  line-height: 1.05;
+  letter-spacing: -0.025em;
+}
+
+.founderLine {
+  max-width: 34rem;
+  margin-top: 1.25rem;
+  color: rgba(41,39,35,.58);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.links {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(2.5rem, 6vw, 5rem);
+  margin-top: clamp(3.5rem, 6vw, 5rem);
+  padding-top: 2.5rem;
+  border-top: 1px solid rgba(41, 39, 35, 0.14);
+}
+
+.linkGroup {
+  display: grid;
+  align-content: start;
+  gap: 0.7rem;
+}
+
+.label {
+  margin-bottom: 0.3rem;
+  color: var(--color-nova-gold);
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.linkGroup a {
+  width: fit-content;
+  color: rgba(41, 39, 35, 0.76);
+  font-size: 0.95rem;
+  transition: color var(--duration-fast) ease;
+}
+
+.linkGroup a:hover {
+  color: var(--color-charcoal);
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-top: clamp(4rem, 7vw, 7rem);
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(41, 39, 35, 0.14);
+  color: rgba(41, 39, 35, 0.58);
+  font-size: 0.82rem;
+}
+
+@media (max-width: 48rem) {
+  .footer {
+    padding: 5rem 0 3rem;
+  }
+
+  .message {
+    max-width: 10ch;
+    margin-top: 1.25rem;
+    font-size: clamp(2.6rem, 12vw, 4rem);
+  }
+
+  .founderLine {
+    max-width: 24rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.92rem;
+    line-height: 1.65;
+  }
+
+  .links {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    margin-top: 4.5rem;
+    padding-top: 2.75rem;
+  }
+
+  .bottom {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.35rem;
+    margin-top: 4rem;
+  }
+}

@@ -1,0 +1,261 @@
+.section {
+  padding-block: clamp(5rem, 9vw, 8rem);
+  background: var(--color-warm-white);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(20rem, 0.8fr);
+  gap: clamp(1.5rem, 3vw, 2.5rem);
+  align-items: stretch;
+}
+
+.faqPanel,
+.contactPanel {
+  display: flex;
+  flex-direction: column;
+
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+  border: 1px solid rgba(41, 39, 35, 0.08);
+  border-radius: 1.5rem;
+  background: rgba(255, 253, 249, 0.88);
+  box-shadow: 0 1.25rem 3rem rgba(41, 39, 35, 0.06);
+}
+
+.eyebrow {
+  margin-bottom: var(--space-3);
+  color: var(--color-nova-gold);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+}
+
+.title {
+  max-width: 14ch;
+  font-size: clamp(2.5rem, 4vw, 4rem);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
+
+.accordion {
+  margin-top: clamp(2rem, 4vw, 3rem);
+}
+
+.item + .item {
+  margin-top: 0.65rem;
+}
+
+.questionHeading {
+  margin: 0;
+  font: inherit;
+}
+
+.questionButton {
+  width: 100%;
+  min-height: 3.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.1rem;
+  border: 1px solid rgba(41, 39, 35, 0.08);
+  border-radius: 0.85rem;
+  background: var(--color-linen);
+  color: var(--color-charcoal);
+  font: inherit;
+  font-size: 0.98rem;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+  transition:
+    border-color var(--duration-fast),
+    background var(--duration-fast),
+    transform var(--duration-fast);
+}
+
+.questionButton:hover {
+  border-color: rgba(186, 135, 67, 0.34);
+  background: rgba(245, 240, 232, 0.72);
+}
+
+.questionButton:focus-visible {
+  outline: 3px solid rgba(186, 135, 67, 0.25);
+  outline-offset: 3px;
+}
+
+.symbol {
+  flex: 0 0 auto;
+  color: var(--color-nova-gold);
+  font-size: 1.35rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.answer {
+  margin-top: -0.1rem;
+  padding: 1rem 1.15rem 1.2rem;
+  border: 1px solid rgba(41, 39, 35, 0.07);
+  border-top: 0;
+  border-radius: 0 0 0.85rem 0.85rem;
+  background: rgba(245, 240, 232, 0.52);
+}
+
+.answer p {
+  color: var(--color-charcoal);
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.contactIntro {
+  max-width: 31rem;
+  margin-top: var(--space-4);
+  color: var(--color-charcoal);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.form {
+  display: grid;
+  gap: 0.9rem;
+  margin-top: 1.5rem;
+}
+
+.field {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.field label {
+  color: var(--color-charcoal);
+  font-size: 0.86rem;
+  font-weight: 600;
+}
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  border: 1px solid rgba(41, 39, 35, 0.12);
+  border-radius: 0.8rem;
+  background: var(--color-warm-white);
+  color: var(--color-charcoal);
+  font: inherit;
+  font-size: 0.98rem;
+  transition:
+    border-color var(--duration-fast),
+    box-shadow var(--duration-fast);
+}
+
+.field input,
+.field select {
+  min-height: 3.4rem;
+  padding-inline: 1rem;
+}
+
+.field textarea {
+  min-height: 7rem;
+  padding: 1rem;
+  resize: vertical;
+}
+
+.field input::placeholder,
+.field textarea::placeholder {
+  color: rgba(41, 39, 35, 0.52);
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  outline: none;
+  border-color: rgba(186, 135, 67, 0.58);
+  box-shadow: 0 0 0 4px rgba(186, 135, 67, 0.11);
+}
+
+.submitButton {
+  min-height: var(--touch-target);
+  justify-self: start;
+  padding: 0.95rem 1.5rem;
+  border: 0;
+  border-radius: 999px;
+  background: var(--color-nova-gold);
+  color: var(--color-warm-white);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 0.85rem 2rem rgba(186, 135, 67, 0.18);
+  transition:
+    transform var(--duration-fast),
+    opacity var(--duration-fast);
+}
+
+.submitButton:hover {
+  transform: translateY(-1px);
+}
+
+.submitButton:active {
+  transform: translateY(0);
+}
+
+.submitButton:focus-visible {
+  outline: 3px solid rgba(186, 135, 67, 0.24);
+  outline-offset: 3px;
+}
+
+@media (max-width: 62rem) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .faqPanel,
+  .contactPanel {
+    width: min(100%, 48rem);
+    margin-inline: auto;
+  }
+}
+
+@media (max-width: 48rem) {
+  .section {
+    padding-block: var(--space-8);
+  }
+
+  .faqPanel,
+  .contactPanel {
+    padding: 1.35rem;
+    border-radius: 1.15rem;
+  }
+
+  .title {
+    max-width: 11ch;
+    font-size: clamp(2.35rem, 11vw, 3.4rem);
+  }
+
+  .questionButton {
+    min-height: 3.4rem;
+    padding: 0.95rem;
+    font-size: 0.94rem;
+  }
+
+  .answer {
+    padding: 0.95rem 1rem 1.1rem;
+  }
+
+  .answer p {
+    font-size: 0.92rem;
+  }
+
+  .submitButton {
+    width: 100%;
+    justify-self: stretch;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .questionButton,
+  .field input,
+  .field select,
+  .field textarea,
+  .submitButton {
+    transition: none;
+  }
+}

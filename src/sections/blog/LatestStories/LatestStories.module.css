@@ -1,0 +1,155 @@
+.section {
+  padding: clamp(5rem, 9vw, 8rem) 0;
+  background: var(--color-warm-white);
+}
+
+.header {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: clamp(2.5rem, 5vw, 4rem);
+}
+
+.eyebrow {
+  margin-bottom: var(--space-3);
+  color: var(--color-nova-gold);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+}
+
+.title {
+  max-width: 12ch;
+  font-size: clamp(2.8rem, 5vw, 4.8rem);
+  line-height: 1.03;
+  letter-spacing: -0.035em;
+  text-wrap: balance;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1.5rem, 3vw, 2.25rem);
+}
+
+.card {
+  overflow: hidden;
+  border: 1px solid rgba(41, 39, 35, 0.08);
+  border-radius: 1.35rem;
+  background: var(--color-linen);
+  box-shadow: 0 1rem 2.5rem rgba(41, 39, 35, 0.05);
+}
+
+.imageLink {
+  display: block;
+}
+
+.imageWrapper {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+
+.image {
+  object-fit: cover;
+  transition: transform var(--duration-slow) var(--ease-calm);
+}
+
+.imageLink:hover .image {
+  transform: scale(1.02);
+}
+
+.content {
+  padding: 1.5rem;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  color: rgba(41, 39, 35, 0.58);
+  font-size: 0.82rem;
+}
+
+.cardTitle {
+  margin-top: 0.85rem;
+  font-size: clamp(1.65rem, 2.5vw, 2.25rem);
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+}
+
+.cardTitle a {
+  color: var(--color-charcoal);
+  text-decoration: none;
+}
+
+.excerpt {
+  margin-top: 1rem;
+  color: rgba(41, 39, 35, 0.76);
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: 1.25rem;
+  color: var(--color-charcoal);
+  font-size: 0.93rem;
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.22rem;
+  transition: opacity var(--duration-fast);
+}
+
+.link:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 64rem) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 48rem) {
+  .section {
+    padding: var(--space-8) 0;
+  }
+
+  .header {
+    display: block;
+    text-align: center;
+  }
+
+  .title {
+    max-width: 10ch;
+    margin-inline: auto;
+    font-size: clamp(2.5rem, 11vw, 3.8rem);
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    width: min(100%, 30rem);
+    margin-inline: auto;
+  }
+
+  .content {
+    padding: 1.35rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .image,
+  .link {
+    transition: none;
+  }
+}

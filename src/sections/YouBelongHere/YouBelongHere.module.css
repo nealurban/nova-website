@@ -1,0 +1,158 @@
+.section {
+  position: relative;
+  min-height: 52rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-linen);
+}
+
+.imageWrapper {
+  position: absolute;
+  inset: 0;
+}
+
+.image {
+  object-fit: cover;
+  object-position: center;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(250, 247, 242, 0.62);
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  width: min(100%, 48rem);
+  margin-inline: auto;
+  padding: clamp(5rem, 8vw, 8rem) 0;
+  text-align: center;
+}
+
+.eyebrow {
+  margin-bottom: 1rem;
+  color: var(--color-nova-gold);
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.title {
+  max-width: 18ch;
+  margin-inline: auto;
+  margin-bottom: 2rem;
+  font-size: clamp(3rem, 6vw, 5rem);
+  line-height: 1.05;
+}
+
+.text {
+  max-width: 34rem;
+  margin-inline: auto;
+  color: rgba(41, 39, 35, 0.92);
+  font-size: 1.2rem;
+  line-height: 2;
+}
+
+.text strong {
+  font-weight: 600;
+}
+
+@media (max-width: 56rem) {
+  .section {
+    min-height: auto;
+    align-items: flex-end;
+  }
+
+  .image {
+    object-position: center top;
+  }
+
+  .overlay {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(245, 240, 232, 0.06) 0%,
+        rgba(245, 240, 232, 0.16) 34%,
+        rgba(245, 240, 232, 0.82) 62%,
+        var(--color-linen) 82%,
+        var(--color-linen) 100%
+      );
+  }
+
+  .content {
+    width: min(100%, 40rem);
+    margin-inline: auto;
+    padding: 31rem 0 6rem;
+    text-align: center;
+  }
+
+  .title,
+  .text {
+    margin-inline: auto;
+  }
+}
+
+@media (max-width: 48rem) {
+  .section {
+    min-height: auto;
+    display: block;
+    background: var(--color-linen);
+  }
+
+  .imageWrapper {
+    position: relative;
+    height: 33rem;
+  }
+
+  .image {
+    object-position: center top;
+  }
+
+  .overlay {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(245, 240, 232, 0.02) 0%,
+        rgba(245, 240, 232, 0.08) 58%,
+        rgba(245, 240, 232, 0.68) 82%,
+        var(--color-linen) 100%
+      );
+  }
+
+  .content {
+    width: min(100%, 25rem);
+    margin-inline: auto;
+    padding: 0.25rem 0 6rem;
+    text-align: center;
+  }
+
+  .eyebrow {
+    margin-bottom: 1rem;
+    font-size: 0.68rem;
+  }
+
+  .title {
+    max-width: 10ch;
+    margin-inline: auto;
+    margin-bottom: 2.25rem;
+    font-size: clamp(2.8rem, 13vw, 4.25rem);
+    line-height: 1;
+  }
+
+  .text {
+    max-width: 22rem;
+    margin-inline: auto;
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .text strong {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-weight: 600;
+  }
+}

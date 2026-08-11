@@ -1,0 +1,114 @@
+.section {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(255, 255, 255, 0.62),
+      transparent 48%
+    ),
+    var(--color-linen);
+  padding: clamp(7rem, 11vw, 11rem) 0;
+}
+
+.content {
+  max-width: 52rem;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.eyebrow {
+  margin-bottom: 1.25rem;
+  color: var(--color-nova-gold);
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.title {
+  max-width: 12ch;
+  margin-inline: auto;
+  font-size: clamp(3.25rem, 6vw, 6rem);
+  line-height: 1.02;
+  letter-spacing: -0.035em;
+  text-wrap: balance;
+}
+
+.copy {
+  max-width: 35rem;
+  margin: 2rem auto 0;
+  color: rgba(41, 39, 35, 0.76);
+  font-size: clamp(1rem, 1.3vw, 1.15rem);
+  line-height: 1.75;
+  text-wrap: balance;
+}
+
+.appStoreButton {
+  min-height: var(--touch-target);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  margin-top: 2.5rem;
+  padding: 0.7rem 1.3rem;
+  border-radius: 0.75rem;
+  background: var(--color-charcoal);
+  color: var(--color-warm-white);
+  box-shadow: 0 0.85rem 2rem rgba(41, 39, 35, 0.14);
+  cursor: default;
+  user-select: none;
+}
+
+.appleIcon {
+  font-size: 1.9rem;
+  line-height: 1;
+}
+
+.buttonText {
+  display: grid;
+  text-align: left;
+  line-height: 1;
+}
+
+.buttonText small {
+  margin-bottom: 0.2rem;
+  font-size: 0.62rem;
+  letter-spacing: 0.02em;
+}
+
+.buttonText strong {
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+
+@media (max-width: 48rem) {
+  .section {
+    padding: 4.5rem 0 5.5rem;
+  }
+
+  .content {
+    max-width: 30rem;
+  }
+
+  .eyebrow {
+    margin-bottom: 1rem;
+    font-size: 0.7rem;
+  }
+
+  .title {
+    max-width: 10ch;
+    font-size: clamp(3rem, 13vw, 4.4rem);
+    line-height: 1;
+  }
+
+  .copy {
+    max-width: 21.5rem;
+    margin-top: 1.75rem;
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+
+  .appStoreButton {
+    margin-top: 2.5rem;
+  }
+}

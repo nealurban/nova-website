@@ -1,0 +1,158 @@
+.section {
+  position: relative;
+  min-height: 52rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background: var(--color-linen);
+}
+
+.imageWrapper {
+  position: absolute;
+  inset: 0;
+}
+
+.image {
+  object-fit: cover;
+  object-position: center right;
+}
+
+.imageFade {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      var(--color-linen) 0%,
+      var(--color-linen) 34%,
+      rgba(245,240,232,.94) 44%,
+      rgba(245,240,232,.55) 50%,
+      rgba(245,240,232,.18) 56%,
+      rgba(245,240,232,.04) 60%,
+      transparent 64%
+    );
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  width: min(100%, 38rem);
+  padding: clamp(7rem, 10vw, 11rem) 0;
+}
+
+.eyebrow {
+  margin-bottom: 1.25rem;
+  color: var(--color-nova-gold);
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.title {
+  max-width: 10ch;
+  margin-bottom: 2rem;
+  font-size: clamp(3.25rem, 5.6vw, 5.75rem);
+  line-height: 1.02;
+}
+
+.body {
+  max-width: 33rem;
+  color: rgba(41, 39, 35, 0.78);
+  font-size: 1.15rem;
+  line-height: 1.85;
+}
+
+.body p + p {
+  margin-top: 1.35rem;
+}
+
+@media (max-width: 56rem) {
+  .section {
+    min-height: auto;
+    align-items: flex-end;
+  }
+
+  .image {
+    object-position: 68% center;
+  }
+
+  .imageFade {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(245, 240, 232, 0.12) 0%,
+        rgba(245, 240, 232, 0.46) 38%,
+        rgba(245, 240, 232, 0.92) 67%,
+        var(--color-linen) 100%
+      );
+  }
+
+  .content {
+    width: min(100%, 42rem);
+    margin-inline: auto;
+    padding: 30rem 0 6rem;
+    text-align: center;
+  }
+
+  .title,
+  .body {
+    margin-inline: auto;
+  }
+
+  .title {
+    max-width: 11ch;
+  }
+}
+
+@media (max-width: 48rem) {
+  .section {
+    min-height: auto;
+    display: block;
+    background: var(--color-linen);
+  }
+
+  .imageWrapper {
+    position: relative;
+    height: 31rem;
+  }
+
+  .image {
+    object-position: 72% top;
+  }
+
+  .imageFade {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(245, 240, 232, 0.02) 0%,
+        rgba(245, 240, 232, 0.08) 58%,
+        rgba(245, 240, 232, 0.55) 82%,
+        var(--color-linen) 100%
+      );
+  }
+
+  .content {
+  width: min(100%, 25rem);
+  margin-inline: auto;
+  padding: 0.25rem 0 6rem;
+  text-align: center;
+}
+
+  .eyebrow {
+    margin-bottom: 1rem;
+  }
+
+  .title {
+    max-width: 10ch;
+    margin-inline: auto;
+    font-size: clamp(2.8rem, 13vw, 4.25rem);
+  }
+
+  .body {
+    max-width: 23rem;
+    margin-inline: auto;
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+}

@@ -163,11 +163,11 @@
   }
 
   .actions {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: var(--space-3);
-    margin-top: var(--space-5);
-  }
+  align-items: flex-start;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin-top: calc(var(--space-5) + 0.625rem);
+}
 }
 
 @media (prefers-reduced-motion: reduce) {
