@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -160,7 +161,9 @@ export default function RootLayout({
         />
 
         {children}
-      </body>
-    </html>
+
+<GoogleAnalytics gaId="G-5P7ZW0CVM1" />
+</body>
+</html>
   );
 }
