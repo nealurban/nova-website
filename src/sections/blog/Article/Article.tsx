@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import Container from "@/components/layout/Container";
 import FadeIn from "@/components/motion/FadeIn";
 import { getPostBySlug, type BlogPost } from "@/lib/blog";
@@ -193,14 +194,29 @@ if (section.type === "continueReading") {
   );
 }
             if (section.type === "featureCallout") {
-              return (
-                <aside key={index} className={styles.featureCallout}>
-                  <p className={styles.featureLabel}>{section.feature}</p>
-                  <h2>{section.title}</h2>
-                  <p>{section.text}</p>
-                </aside>
-              );
-            }
+  return (
+    <aside key={index} className={styles.featureCallout}>
+      <p className={styles.featureLabel}>{section.feature}</p>
+
+      <h2>{section.title}</h2>
+
+      <p>{section.text}</p>
+
+      <div className={styles.featureActions}>
+        <Link
+          href="/#download"
+          className={styles.featureButton}
+        >
+          Download Nova
+        </Link>
+
+        <p className={styles.featureAvailability}>
+          Available on the App Store.
+        </p>
+      </div>
+    </aside>
+  );
+}
 
             return null;
           })}

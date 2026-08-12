@@ -2,6 +2,7 @@ import firstSoberWedding from "@/content/blog/first-sober-wedding";
 import wineIndustryChangingSobriety from "@/content/blog/wine-industry-changing-sobriety";
 import whenYouStopDrinkingWhereDoYouGo from "@/content/blog/when-you-stop-drinking-where-do-you-go";
 import bradPittDrinkingAgainAfterSevenYearsSober from "@/content/blog/brad-pitt-drinking-again-after-seven-years-sober";
+import whySobrietyFeelsBoringAtFirst from "@/content/blog/why-sobriety-feels-boring-at-first";
 
 export type BlogSection =
   | {
@@ -74,6 +75,7 @@ export type BlogPost = {
 };
 
 export const blogPosts: BlogPost[] = [
+whySobrietyFeelsBoringAtFirst,
 bradPittDrinkingAgainAfterSevenYearsSober,
 whenYouStopDrinkingWhereDoYouGo,
 wineIndustryChangingSobriety,
