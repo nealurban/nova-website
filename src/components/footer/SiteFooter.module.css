@@ -65,6 +65,21 @@
   color: var(--color-charcoal);
 }
 
+.socialLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.socialLink svg {
+  color: var(--color-nova-gold);
+  flex-shrink: 0;
+}
+
+.socialLink:hover svg {
+  color: var(--color-charcoal);
+}
+
 .bottom {
   display: flex;
   justify-content: space-between;
