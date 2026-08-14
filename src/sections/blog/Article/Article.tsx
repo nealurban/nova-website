@@ -4,6 +4,7 @@ import Container from "@/components/layout/Container";
 import FadeIn from "@/components/motion/FadeIn";
 import { getPostBySlug, type BlogPost } from "@/lib/blog";
 import styles from "./Article.module.css";
+import ArticleShare from "./ArticleShare";
 import TableOfContents from "@/sections/blog/TableOfContents/TableOfContents";
 import { getAuthorByName } from "@/lib/authors";
 
@@ -83,6 +84,7 @@ export default function Article({ post }: ArticleProps) {
     </div>
   </div>
 </div>
+<ArticleShare title={post.title} />
             </div>
           </FadeIn>
         </Container>
@@ -218,11 +220,13 @@ if (section.type === "continueReading") {
   );
 }
 
-            return null;
+                       return null;
           })}
-            </div>
-  </div>
-</Container>
-</article>
+
+          <ArticleShare title={post.title} />
+        </div>
+      </div>
+    </Container>
+  </article>
   );
 }

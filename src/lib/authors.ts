@@ -16,6 +16,12 @@ export const blogAuthors: Record<string, BlogAuthor> = {
     role: "Research Editor",
     avatar: "/images/authors/lyra.png",
   },
+
+  Danielle: {
+    name: "Danielle",
+    role: "Lifestyle Editor",
+    avatar: "/images/authors/danielle.png",
+  },
 };
 
 export function getAuthorByName(name: string) {
