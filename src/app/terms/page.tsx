@@ -120,9 +120,9 @@ export default function TermsPage() {
 
             <TermsSection title="Contact">
               Questions about these Terms may be sent to{" "}
-              <a href="mailto:startwithnova@gmail.com">
-                startwithnova@gmail.com
-              </a>
+              <a href="mailto:support@novarecoveryapp.com">
+  support@novarecoveryapp.com
+</a>
               .
             </TermsSection>
           </div>

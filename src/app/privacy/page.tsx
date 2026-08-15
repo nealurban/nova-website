@@ -134,9 +134,9 @@ export default function PrivacyPage() {
             <PolicySection title="Contact">
               If you have questions about this Privacy Policy or your data,
               contact us at{" "}
-              <a href="mailto:startwithnova@gmail.com">
-                startwithnova@gmail.com
-              </a>
+              <a href="mailto:support@novarecoveryapp.com">
+  support@novarecoveryapp.com
+</a>
               .
             </PolicySection>
           </div>
