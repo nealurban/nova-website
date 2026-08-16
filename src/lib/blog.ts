@@ -6,6 +6,7 @@ import whySobrietyFeelsBoringAtFirst from "@/content/blog/why-sobriety-feels-bor
 import sleepAfterQuittingAlcohol from "@/content/blog/sleep-after-quitting-alcohol";
 import whyDoIWantToDrinkWhenNothingIsWrong from "@/content/blog/why-do-i-want-to-drink-when-nothing-is-wrong";
 import howToHostASummerPartyWhenNotEveryoneDrinks from "@/content/blog/how-to-host-a-summer-party-when-not-everyone-drinks";
+import isBeingSoberCoolNow from "@/content/blog/is-being-sober-cool-now";
 
 export type BlogSection =
   | {
@@ -78,14 +79,15 @@ export type BlogPost = {
 };
 
 export const blogPosts: BlogPost[] = [
+  isBeingSoberCoolNow,
   howToHostASummerPartyWhenNotEveryoneDrinks,
   whyDoIWantToDrinkWhenNothingIsWrong,
   sleepAfterQuittingAlcohol,
-whySobrietyFeelsBoringAtFirst,
-bradPittDrinkingAgainAfterSevenYearsSober,
-whenYouStopDrinkingWhereDoYouGo,
-wineIndustryChangingSobriety,
-firstSoberWedding,
+  whySobrietyFeelsBoringAtFirst,
+  bradPittDrinkingAgainAfterSevenYearsSober,
+  whenYouStopDrinkingWhereDoYouGo,
+  wineIndustryChangingSobriety,
+  firstSoberWedding,
 ].sort(
   (a, b) =>
     new Date(`${b.publishedDate}T${b.publishedTime}`).getTime() -
