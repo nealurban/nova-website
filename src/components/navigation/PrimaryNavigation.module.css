@@ -76,14 +76,43 @@
 
 .download {
   justify-content: center;
-  padding: 0.9rem 1.6rem;
-  border-radius: var(--radius-pill);
+  gap: 0.55rem;
+  padding: 0.6rem 1rem;
+  border-radius: 0.7rem;
   background: rgba(41, 39, 35, 0.92);
   color: var(--color-warm-white) !important;
+  box-shadow: 0 0.5rem 1.25rem rgba(41, 39, 35, 0.1);
+  transition:
+    transform var(--duration-fast) ease,
+    opacity var(--duration-fast) ease;
 }
 
 .download:hover {
-  opacity: 0.88;
+  transform: translateY(-1px);
+  opacity: 0.92;
+}
+
+.downloadApple {
+  flex: 0 0 auto;
+  font-size: 1.45rem;
+  line-height: 1;
+}
+
+.downloadText {
+  display: grid;
+  text-align: left;
+  line-height: 1;
+}
+
+.downloadText small {
+  margin-bottom: 0.15rem;
+  font-size: 0.5rem;
+  letter-spacing: 0.01em;
+}
+
+.downloadText strong {
+  font-size: 0.92rem;
+  font-weight: 500;
 }
 
 .menuButton,
@@ -214,17 +243,18 @@
   }
 
   .mobileDownload {
-    width: fit-content;
-    min-height: var(--touch-target) !important;
-    justify-content: center;
-    margin-top: 1.5rem;
-    padding: 0.8rem 1.3rem;
-    border: 0 !important;
-    border-radius: var(--radius-pill);
-    background: var(--color-charcoal);
-    color: var(--color-warm-white) !important;
-    font-size: 0.9rem !important;
-  }
+  width: fit-content;
+  min-height: var(--touch-target) !important;
+  justify-content: center;
+  gap: 0.65rem;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.2rem;
+  border: 0 !important;
+  border-radius: 0.75rem;
+  background: var(--color-charcoal);
+  color: var(--color-warm-white) !important;
+  box-shadow: 0 0.65rem 1.5rem rgba(41, 39, 35, 0.12);
+}
 
   .backdrop {
     position: fixed;

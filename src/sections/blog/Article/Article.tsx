@@ -205,17 +205,23 @@ if (section.type === "continueReading") {
       <p>{section.text}</p>
 
       <div className={styles.featureActions}>
-        <Link
-          href="/#download"
-          className={styles.featureButton}
-        >
-          Download Nova
-        </Link>
+  <a
+    href="https://apps.apple.com/app/nova-sobriety-companion/id6784290254"
+    target="_blank"
+    rel="noopener noreferrer"
+    className={styles.featureButton}
+    aria-label="Download Nova on the App Store"
+  >
+    <span className={styles.appleIcon} aria-hidden="true">
+      
+    </span>
 
-        <p className={styles.featureAvailability}>
-          Available on the App Store.
-        </p>
-      </div>
+    <span className={styles.buttonText}>
+      <small>Download on the</small>
+      <strong>App Store</strong>
+    </span>
+  </a>
+</div>
     </aside>
   );
 }

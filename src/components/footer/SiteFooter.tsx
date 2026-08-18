@@ -17,11 +17,28 @@ export default function SiteFooter() {
             />
           </Link>
 
-          <p className={styles.message}>
-            A peaceful life is still waiting for you.
-          </p>
+         <p className={styles.message}>
+  A peaceful life is still waiting for you.
+</p>
 
-          <p className={styles.founderLine}>
+<a
+  href="https://apps.apple.com/app/nova-sobriety-companion/id6784290254"
+  target="_blank"
+  rel="noopener noreferrer"
+  className={styles.appStoreButton}
+  aria-label="Download Nova on the App Store"
+>
+  <span className={styles.appleIcon} aria-hidden="true">
+    
+  </span>
+
+  <span className={styles.buttonText}>
+    <small>Download on the</small>
+    <strong>App Store</strong>
+  </span>
+</a>
+
+<p className={styles.founderLine}>
             Created by Neal, someone who chose sobriety and built the companion
             he wished he&apos;d had.
           </p>
@@ -37,7 +54,6 @@ export default function SiteFooter() {
 
           <div className={styles.linkGroup}>
             <p className={styles.label}>Nova</p>
-            <Link href="/#download">Download</Link>
             <Link href="/privacy">Privacy</Link>
             <Link href="/terms">Terms</Link>
           </div>

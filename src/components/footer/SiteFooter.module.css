@@ -23,6 +23,10 @@
   letter-spacing: -0.025em;
 }
 
+.message + .appStoreButton {
+  margin-top: 1.5rem;
+}
+
 .founderLine {
   max-width: 34rem;
   margin-top: 1.25rem;
@@ -63,6 +67,83 @@
 
 .linkGroup a:hover {
   color: var(--color-charcoal);
+}
+
+.appStoreButton {
+  min-height: var(--touch-target);
+
+  display: inline-flex !important;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 0.7rem;
+
+  margin-top: 0.15rem;
+
+  padding: 0.7rem 1.2rem;
+
+  border-radius: 0.75rem;
+
+  background: var(--color-charcoal);
+
+  color: var(--color-warm-white) !important;
+
+  text-decoration: none;
+
+  box-shadow: 0 0.75rem 1.75rem rgba(41, 39, 35, 0.1);
+
+  transition:
+    transform var(--duration-fast) var(--ease-calm),
+    box-shadow var(--duration-fast) ease,
+    opacity var(--duration-fast) ease;
+}
+
+.appStoreButton:hover {
+  transform: translateY(-2px);
+
+  color: var(--color-warm-white) !important;
+
+  box-shadow: 0 0.95rem 2rem rgba(41, 39, 35, 0.15);
+
+  opacity: 0.96;
+}
+
+.appStoreButton:focus-visible {
+  outline: 2px solid var(--color-nova-gold);
+
+  outline-offset: 4px;
+}
+
+.appleIcon {
+  flex: 0 0 auto;
+
+  font-size: 1.7rem;
+
+  line-height: 1;
+}
+
+.buttonText {
+  display: grid;
+
+  text-align: left;
+
+  line-height: 1;
+}
+
+.buttonText small {
+  margin-bottom: 0.18rem;
+
+  font-size: 0.56rem;
+
+  letter-spacing: 0.01em;
+}
+
+.buttonText strong {
+  font-size: 1.05rem;
+
+  font-weight: 500;
 }
 
 .socialLink {

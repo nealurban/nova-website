@@ -2,12 +2,15 @@ import Image from "next/image";
 import Container from "@/components/layout/Container";
 import styles from "./WelcomeHome.module.css";
 
+const APP_STORE_URL =
+  "https://apps.apple.com/app/nova-sobriety-companion/id6784290254";
+
 export default function WelcomeHome() {
   return (
     <section className={styles.welcomeHome}>
       <Image
         src="/images/hero/nova-hero.jpg"
-       alt="A peaceful coastal living room in warm morning light, with a Golden Retriever resting on the rug."
+        alt="A peaceful coastal living room in warm morning light, with a Golden Retriever resting on the rug."
         fill
         priority
         sizes="100vw"
@@ -29,8 +32,19 @@ export default function WelcomeHome() {
           </p>
 
           <div className={styles.actions}>
-            <a href="#download" className={styles.primaryAction}>
-              Download Nova
+            <a
+              href={APP_STORE_URL}
+              className={styles.primaryAction}
+              aria-label="Download Nova on the App Store"
+            >
+              <span className={styles.appleIcon} aria-hidden="true">
+                
+              </span>
+
+              <span className={styles.buttonText}>
+                <small>Download on the</small>
+                <strong>App Store</strong>
+              </span>
             </a>
 
             <a href="#how-nova-helps" className={styles.secondaryAction}>

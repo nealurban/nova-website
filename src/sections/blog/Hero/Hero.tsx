@@ -32,12 +32,22 @@ export default function Hero() {
           </p>
 
           <div className={styles.actions}>
-            <span
-              className={styles.downloadButton}
-              aria-label="Nova is coming soon to the App Store"
-            >
-              Download Nova
-            </span>
+            <a
+  href="https://apps.apple.com/app/nova-sobriety-companion/id6784290254"
+  target="_blank"
+  rel="noopener noreferrer"
+  className={styles.downloadButton}
+  aria-label="Download Nova on the App Store"
+>
+  <span className={styles.appleIcon} aria-hidden="true">
+    
+  </span>
+
+  <span className={styles.buttonText}>
+    <small>Download on the</small>
+    <strong>App Store</strong>
+  </span>
+</a>
 
             <a href="#featured-story" className={styles.secondaryLink}>
   Explore the latest stories

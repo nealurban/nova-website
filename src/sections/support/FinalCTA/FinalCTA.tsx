@@ -25,22 +25,25 @@ export default function FinalCTA() {
               thinking differently, Nova will be here to walk beside you.
             </p>
 
-            <span
-              className={styles.appStoreButton}
-              aria-label="Nova is coming soon to the App Store"
-            >
-              <span
-                className={styles.appleIcon}
-                aria-hidden="true"
-              >
-                
-              </span>
+            <a
+  href="https://apps.apple.com/app/nova-sobriety-companion/id6784290254"
+  target="_blank"
+  rel="noopener noreferrer"
+  className={styles.appStoreButton}
+  aria-label="Download Nova on the App Store"
+>
+  <span
+    className={styles.appleIcon}
+    aria-hidden="true"
+  >
+    
+  </span>
 
-              <span className={styles.buttonText}>
-                <small>Coming soon to the</small>
-                <strong>App Store</strong>
-              </span>
-            </span>
+  <span className={styles.buttonText}>
+    <small>Download on the</small>
+    <strong>App Store</strong>
+  </span>
+</a>
           </div>
         </FadeIn>
       </Container>

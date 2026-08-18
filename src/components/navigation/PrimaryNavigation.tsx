@@ -82,11 +82,21 @@ export default function PrimaryNavigation() {
           <a href="/support">Support</a>
 
           <a
-            href="/#download"
-            className={styles.download}
-          >
-            Download
-          </a>
+  href="https://apps.apple.com/app/nova-sobriety-companion/id6784290254"
+  className={styles.download}
+  aria-label="Download Nova on the App Store"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <span className={styles.downloadApple} aria-hidden="true">
+    
+  </span>
+
+  <span className={styles.downloadText}>
+    <small>Download on the</small>
+    <strong>App Store</strong>
+  </span>
+</a>
         </nav>
 
         <button
@@ -154,13 +164,23 @@ export default function PrimaryNavigation() {
             Support
           </a>
 
-          <a
-            href="/#download"
-            className={styles.mobileDownload}
-            onClick={closeMenu}
-          >
-            Download
-          </a>
+         <a
+  href="https://apps.apple.com/app/nova-sobriety-companion/id6784290254"
+  className={styles.mobileDownload}
+  aria-label="Download Nova on the App Store"
+  target="_blank"
+  rel="noopener noreferrer"
+  onClick={closeMenu}
+>
+  <span className={styles.downloadApple} aria-hidden="true">
+    
+  </span>
+
+  <span className={styles.downloadText}>
+    <small>Download on the</small>
+    <strong>App Store</strong>
+  </span>
+</a>
         </nav>
       </div>
 

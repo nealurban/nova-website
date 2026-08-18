@@ -45,18 +45,49 @@
 
 .appStoreButton {
   min-height: var(--touch-target);
+
   display: inline-flex;
+
   align-items: center;
+
   justify-content: center;
+
   gap: 0.7rem;
+
   margin-top: 2.5rem;
+
   padding: 0.7rem 1.3rem;
+
   border-radius: 0.75rem;
+
   background: var(--color-charcoal);
+
   color: var(--color-warm-white);
+
+  text-decoration: none;
+
   box-shadow: 0 0.85rem 2rem rgba(41, 39, 35, 0.14);
-  cursor: default;
+
+  cursor: pointer;
+
   user-select: none;
+
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    opacity 180ms ease;
+}
+
+.appStoreButton:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 1rem 2.25rem rgba(41, 39, 35, 0.18);
+}
+
+.appStoreButton:focus-visible {
+  outline: 2px solid var(--color-nova-gold);
+
+  outline-offset: 4px;
 }
 
 .appleIcon {
