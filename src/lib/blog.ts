@@ -8,6 +8,7 @@ import whyDoIWantToDrinkWhenNothingIsWrong from "@/content/blog/why-do-i-want-to
 import howToHostASummerPartyWhenNotEveryoneDrinks from "@/content/blog/how-to-host-a-summer-party-when-not-everyone-drinks";
 import isBeingSoberCoolNow from "@/content/blog/is-being-sober-cool-now";
 import youDontHaveToHitRockBottomToStopDrinking from "@/content/blog/you-dont-have-to-hit-rock-bottom-to-stop-drinking";
+import whatHappensAfter30DaysWithoutAlcohol from "@/content/blog/what-happens-after-30-days-without-alcohol";
 
 export type BlogSection =
   | {
@@ -80,6 +81,7 @@ export type BlogPost = {
 };
 
 export const blogPosts: BlogPost[] = [
+  whatHappensAfter30DaysWithoutAlcohol,
   youDontHaveToHitRockBottomToStopDrinking,
   isBeingSoberCoolNow,
   howToHostASummerPartyWhenNotEveryoneDrinks,
