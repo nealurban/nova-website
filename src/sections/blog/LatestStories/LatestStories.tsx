@@ -21,22 +21,23 @@ export default function LatestStories() {
       aria-labelledby="latest-stories-title"
     >
       <Container>
-        <FadeIn>
-          <div className={styles.header}>
-            <div>
-              <p className={styles.eyebrow}>LATEST STORIES</p>
+  <FadeIn>
+    <div className={styles.header}>
+      <div>
+        <p className={styles.eyebrow}>LATEST STORIES</p>
 
-              <h2
-                id="latest-stories-title"
-                className={styles.title}
-              >
-                Stories worth staying for.
-              </h2>
-            </div>
-          </div>
+        <h2
+          id="latest-stories-title"
+          className={styles.title}
+        >
+          Stories worth staying for.
+        </h2>
+      </div>
+    </div>
+  </FadeIn>
 
-          <div className={styles.grid}>
-            {latestPosts.map((post) => (
+  <div className={styles.grid}>
+    {latestPosts.map((post) => (
               <article
                 key={post.slug}
                 className={styles.card}
@@ -83,10 +84,9 @@ export default function LatestStories() {
                   </Link>
                 </div>
               </article>
-            ))}
-          </div>
-        </FadeIn>
-      </Container>
+                  ))}
+    </div>
+</Container>
     </section>
   );
 }
