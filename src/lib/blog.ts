@@ -12,6 +12,7 @@ import whatHappensAfter30DaysWithoutAlcohol from "@/content/blog/what-happens-af
 import whatDoesAnAlcoholCravingReallyMean from "@/content/blog/what-does-an-alcohol-craving-really-mean";
 import coffeeRavesSoberNightlife from "@/content/blog/coffee-raves-sober-nightlife";
 import fridayNightWithoutDrinking from "@/content/blog/friday-night-without-drinking";
+import theLastDinnerOfSummer from "@/content/blog/the-last-dinner-of-summer";
 
 export type BlogSection =
   | {
@@ -84,6 +85,7 @@ export type BlogPost = {
 };
 
 export const blogPosts: BlogPost[] = [
+  theLastDinnerOfSummer,
   fridayNightWithoutDrinking,
   coffeeRavesSoberNightlife,
   whatDoesAnAlcoholCravingReallyMean,
