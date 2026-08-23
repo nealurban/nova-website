@@ -5,10 +5,23 @@ import FadeIn from "@/components/motion/FadeIn";
 import { blogPosts, featuredPost } from "@/lib/blog";
 import styles from "./LatestStories.module.css";
 
-export default function LatestStories() {
-  const latestPosts = blogPosts.filter(
-    (post) => post.slug !== featuredPost.slug
-  );
+type LatestStoriesProps = {
+  selectedCategory?: string | null;
+};
+
+export default function LatestStories({
+  selectedCategory,
+}: LatestStoriesProps) {
+  const latestPosts = blogPosts.filter((post) => {
+    const isNotFeatured =
+      post.slug !== featuredPost.slug;
+
+    const matchesCategory =
+      !selectedCategory ||
+      post.category === selectedCategory;
+
+    return isNotFeatured && matchesCategory;
+  });
 
   if (latestPosts.length === 0) {
     return null;
@@ -21,72 +34,78 @@ export default function LatestStories() {
       aria-labelledby="latest-stories-title"
     >
       <Container>
-  <FadeIn>
-    <div className={styles.header}>
-      <div>
-        <p className={styles.eyebrow}>LATEST STORIES</p>
+        <FadeIn>
+          <div className={styles.header}>
+            <div>
+              <p className={styles.eyebrow}>
+                {selectedCategory
+                  ? selectedCategory.toUpperCase()
+                  : "LATEST STORIES"}
+              </p>
 
-        <h2
-          id="latest-stories-title"
-          className={styles.title}
-        >
-          Stories worth staying for.
-        </h2>
-      </div>
-    </div>
-  </FadeIn>
-
-  <div className={styles.grid}>
-    {latestPosts.map((post) => (
-              <article
-                key={post.slug}
-                className={styles.card}
+              <h2
+                id="latest-stories-title"
+                className={styles.title}
               >
+                {selectedCategory
+                  ? `Explore ${selectedCategory}.`
+                  : "Stories worth staying for."}
+              </h2>
+            </div>
+          </div>
+        </FadeIn>
+
+        <div className={styles.grid}>
+          {latestPosts.map((post) => (
+            <article
+              key={post.slug}
+              className={styles.card}
+            >
+              <Link
+                href={`/blog/${post.slug}`}
+                className={styles.imageLink}
+                aria-label={`Read ${post.title}`}
+              >
+                <div className={styles.imageWrapper}>
+                  <Image
+                    src={post.image}
+                    alt={post.heroAlt}
+                    fill
+                    sizes="(max-width: 48rem) 100vw, 33vw"
+                    className={styles.image}
+                  />
+                </div>
+              </Link>
+
+              <div className={styles.content}>
+                <div className={styles.meta}>
+                  <span>{post.category}</span>
+                  <span aria-hidden="true">•</span>
+                  <span>{post.readTime}</span>
+                </div>
+
+                <h3 className={styles.cardTitle}>
+                  <Link href={`/blog/${post.slug}`}>
+                    {post.title}
+                  </Link>
+                </h3>
+
+                <p className={styles.excerpt}>
+                  {post.excerpt}
+                </p>
+
                 <Link
                   href={`/blog/${post.slug}`}
-                  className={styles.imageLink}
-                  aria-label={`Read ${post.title}`}
+                  className={styles.link}
                 >
-                  <div className={styles.imageWrapper}>
-                    <Image
-                      src={post.image}
-                      alt={post.heroAlt}
-                      fill
-                      sizes="(max-width: 48rem) 100vw, 33vw"
-                      className={styles.image}
-                    />
-                  </div>
+                  Read article
+                  <span aria-hidden="true">→</span>
                 </Link>
-
-                <div className={styles.content}>
-                  <div className={styles.meta}>
-                    <span>{post.category}</span>
-                    <span aria-hidden="true">•</span>
-                    <span>{post.readTime}</span>
-                  </div>
-
-                  <h3 className={styles.cardTitle}>
-                    <Link href={`/blog/${post.slug}`}>
-                      {post.title}
-                    </Link>
-                  </h3>
-
-                  <p className={styles.excerpt}>
-                    {post.excerpt}
-                  </p>
-
-                  <Link
-                    href={`/blog/${post.slug}`}
-                    className={styles.link}
-                  >
-                    Read article
-                    <span aria-hidden="true">→</span>
-                  </Link>
-                </div>
-              </article>
-                  ))}
-    </div>
-</Container>
+              </div>
+            </article>
+          ))}
+        </div>
+      </Container>
     </section>
   );
 }
