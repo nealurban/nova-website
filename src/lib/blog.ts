@@ -14,6 +14,7 @@ import coffeeRavesSoberNightlife from "@/content/blog/coffee-raves-sober-nightli
 import fridayNightWithoutDrinking from "@/content/blog/friday-night-without-drinking";
 import theLastDinnerOfSummer from "@/content/blog/the-last-dinner-of-summer";
 import arePeopleDrinkingLessAlcohol from "@/content/blog/are-people-drinking-less-alcohol";
+import friendshipsChangeWhenYouStopDrinking from "@/content/blog/friendships-change-when-you-stop-drinking";
 
 export type BlogSection =
   | {
@@ -86,6 +87,7 @@ export type BlogPost = {
 };
 
 export const blogPosts: BlogPost[] = [
+  friendshipsChangeWhenYouStopDrinking,
   arePeopleDrinkingLessAlcohol,
   theLastDinnerOfSummer,
   fridayNightWithoutDrinking,
