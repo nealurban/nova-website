@@ -16,6 +16,7 @@ import theLastDinnerOfSummer from "@/content/blog/the-last-dinner-of-summer";
 import arePeopleDrinkingLessAlcohol from "@/content/blog/are-people-drinking-less-alcohol";
 import friendshipsChangeWhenYouStopDrinking from "@/content/blog/friendships-change-when-you-stop-drinking";
 import alcoholWellnessTrend from "@/content/blog/alcohol-wellness-trend";
+import lonelinessAlcoholSocialIsolation from "@/content/blog/loneliness-alcohol-social-isolation";
 
 export type BlogSection =
   | {
@@ -88,6 +89,7 @@ export type BlogPost = {
 };
 
 export const blogPosts: BlogPost[] = [
+  lonelinessAlcoholSocialIsolation,
   alcoholWellnessTrend,
   friendshipsChangeWhenYouStopDrinking,
   arePeopleDrinkingLessAlcohol,
