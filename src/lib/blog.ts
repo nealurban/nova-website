@@ -17,6 +17,7 @@ import arePeopleDrinkingLessAlcohol from "@/content/blog/are-people-drinking-les
 import friendshipsChangeWhenYouStopDrinking from "@/content/blog/friendships-change-when-you-stop-drinking";
 import alcoholWellnessTrend from "@/content/blog/alcohol-wellness-trend";
 import lonelinessAlcoholSocialIsolation from "@/content/blog/loneliness-alcohol-social-isolation";
+import whatHappensToYourBrainWhenYouStopDrinking from "@/content/blog/what-happens-to-your-brain-when-you-stop-drinking";
 
 export type BlogSection =
   | {
@@ -89,6 +90,7 @@ export type BlogPost = {
 };
 
 export const blogPosts: BlogPost[] = [
+  whatHappensToYourBrainWhenYouStopDrinking,
   lonelinessAlcoholSocialIsolation,
   alcoholWellnessTrend,
   friendshipsChangeWhenYouStopDrinking,
