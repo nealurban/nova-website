@@ -18,6 +18,7 @@ import friendshipsChangeWhenYouStopDrinking from "@/content/blog/friendships-cha
 import alcoholWellnessTrend from "@/content/blog/alcohol-wellness-trend";
 import lonelinessAlcoholSocialIsolation from "@/content/blog/loneliness-alcohol-social-isolation";
 import whatHappensToYourBrainWhenYouStopDrinking from "@/content/blog/what-happens-to-your-brain-when-you-stop-drinking";
+import isWineHealthierThanBeer from "@/content/blog/is-wine-healthier-than-beer";
 
 export type BlogSection =
   | {
@@ -90,6 +91,7 @@ export type BlogPost = {
 };
 
 export const blogPosts: BlogPost[] = [
+  isWineHealthierThanBeer,
   whatHappensToYourBrainWhenYouStopDrinking,
   lonelinessAlcoholSocialIsolation,
   alcoholWellnessTrend,
