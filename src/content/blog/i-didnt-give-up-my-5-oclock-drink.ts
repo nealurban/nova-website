@@ -61,7 +61,7 @@ const iDidntGiveUpMy5OClockDrink: BlogPost = {
         "When I decided to cut back, I didn't decide to stop permanently. I wanted to change the pattern without pretending I knew exactly where it would lead.",
     },
     {
-      type: "paragraph",
+      type: "quote",
       text:
         "The first change was surprisingly simple: I kept the 5 o'clock drink and changed what was in the glass.",
     },
@@ -176,7 +176,7 @@ const iDidntGiveUpMy5OClockDrink: BlogPost = {
         "Recently, I have also declined alcohol around friends and family. It initially felt odd. It is becoming more normal.",
     },
     {
-      type: "paragraph",
+      type: "quote",
       text:
         "There is no announcement required. Sometimes I just choose something else and keep talking.",
     },
@@ -291,7 +291,7 @@ const iDidntGiveUpMy5OClockDrink: BlogPost = {
         "Some nights the drink is dealcoholized wine. Some nights it is club soda with fruit. Some nights it is The Green Hour.",
     },
     {
-      type: "paragraph",
+      type: "quote",
       text:
         "What matters is that I have more than one thing to pour now.",
     },
