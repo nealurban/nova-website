@@ -6,8 +6,8 @@ export default function Hero() {
   return (
     <section className={styles.hero}>
       <Image
-        src="/images/blog/blog-hero-august-30A-sunset.png"
-        alt="A peaceful 30A coastal boardwalk beside the Gulf at sunset in August."
+        src="/images/blog/nova-blog-header-september-2026.png"
+alt="A quiet 30A coastal porch overlooking the Gulf in warm early September morning light."
         fill
         priority
         sizes="100vw"
