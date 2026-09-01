@@ -21,6 +21,7 @@ import whatHappensToYourBrainWhenYouStopDrinking from "@/content/blog/what-happe
 import isWineHealthierThanBeer from "@/content/blog/is-wine-healthier-than-beer";
 import iDidntGiveUpMy5OClockDrink from "@/content/blog/i-didnt-give-up-my-5-oclock-drink";
 import doAlcoholFreeDrinksHelpYouDrinkLess from "@/content/blog/do-alcohol-free-drinks-help-you-drink-less";
+import whatHappensToYourLiverWhenYouStopDrinking from "@/content/blog/what-happens-to-your-liver-when-you-stop-drinking";
 
 export type BlogSection =
   | {
@@ -93,6 +94,7 @@ export type BlogPost = {
 };
 
 export const blogPosts: BlogPost[] = [
+  whatHappensToYourLiverWhenYouStopDrinking,
   doAlcoholFreeDrinksHelpYouDrinkLess,
   iDidntGiveUpMy5OClockDrink,
   isWineHealthierThanBeer,
