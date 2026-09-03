@@ -23,6 +23,7 @@ import iDidntGiveUpMy5OClockDrink from "@/content/blog/i-didnt-give-up-my-5-oclo
 import doAlcoholFreeDrinksHelpYouDrinkLess from "@/content/blog/do-alcohol-free-drinks-help-you-drink-less";
 import whatHappensToYourLiverWhenYouStopDrinking from "@/content/blog/what-happens-to-your-liver-when-you-stop-drinking";
 import theWorldStartedDrinkingLess from "@/content/blog/the-world-started-drinking-less-alcohol-companies-were-preparing-for-the-opposite";
+import youDontHaveToWaitUntilJanuary from "@/content/blog/you-dont-have-to-wait-until-january-to-change-your-drinking";
 
 export type BlogSection =
   | {
@@ -95,6 +96,7 @@ export type BlogPost = {
 };
 
 export const blogPosts: BlogPost[] = [
+  youDontHaveToWaitUntilJanuary,
   theWorldStartedDrinkingLess,
   whatHappensToYourLiverWhenYouStopDrinking,
   doAlcoholFreeDrinksHelpYouDrinkLess,
