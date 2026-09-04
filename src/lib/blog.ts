@@ -24,6 +24,7 @@ import doAlcoholFreeDrinksHelpYouDrinkLess from "@/content/blog/do-alcohol-free-
 import whatHappensToYourLiverWhenYouStopDrinking from "@/content/blog/what-happens-to-your-liver-when-you-stop-drinking";
 import theWorldStartedDrinkingLess from "@/content/blog/the-world-started-drinking-less-alcohol-companies-were-preparing-for-the-opposite";
 import youDontHaveToWaitUntilJanuary from "@/content/blog/you-dont-have-to-wait-until-january-to-change-your-drinking";
+import doesAlcoholFreeActuallyMeanNoAlcohol from "@/content/blog/does-alcohol-free-actually-mean-no-alcohol";
 
 export type BlogSection =
   | {
@@ -96,6 +97,7 @@ export type BlogPost = {
 };
 
 export const blogPosts: BlogPost[] = [
+  doesAlcoholFreeActuallyMeanNoAlcohol,
   youDontHaveToWaitUntilJanuary,
   theWorldStartedDrinkingLess,
   whatHappensToYourLiverWhenYouStopDrinking,
