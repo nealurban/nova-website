@@ -27,6 +27,7 @@ import youDontHaveToWaitUntilJanuary from "@/content/blog/you-dont-have-to-wait-
 import doesAlcoholFreeActuallyMeanNoAlcohol from "@/content/blog/does-alcohol-free-actually-mean-no-alcohol";
 import laborDayPartyIActuallyWantToAttend from "@/content/blog/the-labor-day-party-i-actually-want-to-attend";
 import howMuchDoesAlcoholRaiseCancerRisk from "@/content/blog/how-much-does-alcohol-actually-raise-your-cancer-risk";
+import doHangoverPreventionSupplementsActuallyWork from "@/content/blog/do-hangover-prevention-supplements-actually-work";
 
 export type BlogSection =
   | {
@@ -99,6 +100,7 @@ export type BlogPost = {
 };
 
 export const blogPosts: BlogPost[] = [
+  doHangoverPreventionSupplementsActuallyWork,
   howMuchDoesAlcoholRaiseCancerRisk,
   laborDayPartyIActuallyWantToAttend,
   doesAlcoholFreeActuallyMeanNoAlcohol,
