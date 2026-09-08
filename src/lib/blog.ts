@@ -28,6 +28,7 @@ import doesAlcoholFreeActuallyMeanNoAlcohol from "@/content/blog/does-alcohol-fr
 import laborDayPartyIActuallyWantToAttend from "@/content/blog/the-labor-day-party-i-actually-want-to-attend";
 import howMuchDoesAlcoholRaiseCancerRisk from "@/content/blog/how-much-does-alcohol-actually-raise-your-cancer-risk";
 import doHangoverPreventionSupplementsActuallyWork from "@/content/blog/do-hangover-prevention-supplements-actually-work";
+import areAmericansActuallyDrinkingLess from "@/content/blog/are-americans-actually-drinking-less";
 
 export type BlogSection =
   | {
@@ -100,6 +101,7 @@ export type BlogPost = {
 };
 
 export const blogPosts: BlogPost[] = [
+  areAmericansActuallyDrinkingLess,
   doHangoverPreventionSupplementsActuallyWork,
   howMuchDoesAlcoholRaiseCancerRisk,
   laborDayPartyIActuallyWantToAttend,
