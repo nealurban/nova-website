@@ -29,6 +29,7 @@ import laborDayPartyIActuallyWantToAttend from "@/content/blog/the-labor-day-par
 import howMuchDoesAlcoholRaiseCancerRisk from "@/content/blog/how-much-does-alcohol-actually-raise-your-cancer-risk";
 import doHangoverPreventionSupplementsActuallyWork from "@/content/blog/do-hangover-prevention-supplements-actually-work";
 import areAmericansActuallyDrinkingLess from "@/content/blog/are-americans-actually-drinking-less";
+import whyDoesSeeingADrinkSuddenlyMakeYouWantOne from "@/content/blog/why-does-seeing-a-drink-suddenly-make-you-want-one";
 
 export type BlogSection =
   | {
@@ -101,6 +102,7 @@ export type BlogPost = {
 };
 
 export const blogPosts: BlogPost[] = [
+  whyDoesSeeingADrinkSuddenlyMakeYouWantOne,
   areAmericansActuallyDrinkingLess,
   doHangoverPreventionSupplementsActuallyWork,
   howMuchDoesAlcoholRaiseCancerRisk,
