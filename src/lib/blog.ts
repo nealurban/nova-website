@@ -33,6 +33,7 @@ import whyDoesSeeingADrinkSuddenlyMakeYouWantOne from "@/content/blog/why-does-s
 import isGenZReallyDrinkingLess from "@/content/blog/is-gen-z-really-drinking-less";
 import canAnAlcoholFreeBarActuallySurvive from "@/content/blog/can-an-alcohol-free-bar-actually-survive";
 import iStillWantFootballSunday from "@/content/blog/i-still-want-football-sunday";
+import whatHappensAfterOneOrTwoDrinks from "@/content/blog/what-happens-after-one-or-two-drinks";
 
 export type BlogSection =
   | {
@@ -105,6 +106,7 @@ export type BlogPost = {
 };
 
 export const blogPosts: BlogPost[] = [
+  whatHappensAfterOneOrTwoDrinks,
   iStillWantFootballSunday,
   canAnAlcoholFreeBarActuallySurvive,
   isGenZReallyDrinkingLess,
