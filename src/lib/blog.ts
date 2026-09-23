@@ -38,6 +38,7 @@ import yourAlcoholCravingMightNotBeAsRandom from "@/content/blog/your-alcohol-cr
 import theWeirdestThingAboutBeingFourYearsSober from "@/content/blog/the-weirdest-thing-about-being-four-years-sober";
 import whatTheHellIsABorg from "@/content/blog/what-the-hell-is-a-borg";
 import whyDoesEveryAlcoholFreeDrinkHaveToPretend from "@/content/blog/why-does-every-alcohol-free-drink-have-to-pretend-to-be-alcohol";
+import genZDrinkingLessAdults5064DrinkingMore from "@/content/blog/gen-z-drinking-less-adults-50-64-drinking-more";
 
 export type BlogSection =
   | {
@@ -110,6 +111,7 @@ export type BlogPost = {
 };
 
 export const blogPosts: BlogPost[] = [
+  genZDrinkingLessAdults5064DrinkingMore,
   whyDoesEveryAlcoholFreeDrinkHaveToPretend,
   whatTheHellIsABorg,
   theWeirdestThingAboutBeingFourYearsSober,
