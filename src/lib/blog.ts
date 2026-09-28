@@ -40,6 +40,8 @@ import whatTheHellIsABorg from "@/content/blog/what-the-hell-is-a-borg";
 import whyDoesEveryAlcoholFreeDrinkHaveToPretend from "@/content/blog/why-does-every-alcohol-free-drink-have-to-pretend-to-be-alcohol";
 import genZDrinkingLessAdults5064DrinkingMore from "@/content/blog/gen-z-drinking-less-adults-50-64-drinking-more";
 import peopleYouLoveUsedToDrinkWith from "@/content/blog/when-people-you-love-are-people-you-used-to-drink-with";
+import whyDoIWakeUpAt3amAfterDrinking from "@/content/blog/why-do-i-wake-up-at-3am-after-drinking";
+
 export type BlogSection =
   | {
       type: "paragraph";
@@ -111,6 +113,7 @@ export type BlogPost = {
 };
 
 export const blogPosts: BlogPost[] = [
+  whyDoIWakeUpAt3amAfterDrinking,
   peopleYouLoveUsedToDrinkWith,
   genZDrinkingLessAdults5064DrinkingMore,
   whyDoesEveryAlcoholFreeDrinkHaveToPretend,
