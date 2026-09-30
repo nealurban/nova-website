@@ -41,6 +41,7 @@ import whyDoesEveryAlcoholFreeDrinkHaveToPretend from "@/content/blog/why-does-e
 import genZDrinkingLessAdults5064DrinkingMore from "@/content/blog/gen-z-drinking-less-adults-50-64-drinking-more";
 import peopleYouLoveUsedToDrinkWith from "@/content/blog/when-people-you-love-are-people-you-used-to-drink-with";
 import whyDoIWakeUpAt3amAfterDrinking from "@/content/blog/why-do-i-wake-up-at-3am-after-drinking";
+import doesScaringPeopleAboutAlcoholHelp from "@/content/blog/does-scaring-people-about-alcohol-help-them-drink-less";
 
 export type BlogSection =
   | {
@@ -113,6 +114,7 @@ export type BlogPost = {
 };
 
 export const blogPosts: BlogPost[] = [
+  doesScaringPeopleAboutAlcoholHelp,
   whyDoIWakeUpAt3amAfterDrinking,
   peopleYouLoveUsedToDrinkWith,
   genZDrinkingLessAdults5064DrinkingMore,
