@@ -43,6 +43,7 @@ import peopleYouLoveUsedToDrinkWith from "@/content/blog/when-people-you-love-ar
 import whyDoIWakeUpAt3amAfterDrinking from "@/content/blog/why-do-i-wake-up-at-3am-after-drinking";
 import doesScaringPeopleAboutAlcoholHelp from "@/content/blog/does-scaring-people-about-alcohol-help-them-drink-less";
 import iDontEvenEnjoyDrinkingAnymore from "@/content/blog/i-dont-even-enjoy-drinking-anymore";
+import youDontHaveToQuitForever from "@/content/blog/you-dont-have-to-quit-forever";
 
 export type BlogSection =
   | {
@@ -115,6 +116,7 @@ export type BlogPost = {
 };
 
 export const blogPosts: BlogPost[] = [
+  youDontHaveToQuitForever,
   iDontEvenEnjoyDrinkingAnymore,
   doesScaringPeopleAboutAlcoholHelp,
   whyDoIWakeUpAt3amAfterDrinking,
