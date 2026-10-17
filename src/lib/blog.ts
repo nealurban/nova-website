@@ -46,6 +46,7 @@ import iDontEvenEnjoyDrinkingAnymore from "@/content/blog/i-dont-even-enjoy-drin
 import youDontHaveToQuitForever from "@/content/blog/you-dont-have-to-quit-forever";
 import whatDoesAnAlcoholCravingFeelLike from "@/content/blog/what-does-an-alcohol-craving-feel-like";
 import yourGlassOfWineMightBeMoreThanOneDrink from "@/content/blog/your-glass-of-wine-might-be-more-than-one-drink";
+import planAnAlcoholFreeFallOuting from "@/content/blog/plan-an-alcohol-free-fall-outing";
 
 export type BlogSection =
   | {
@@ -118,6 +119,7 @@ export type BlogPost = {
 };
 
 export const blogPosts: BlogPost[] = [
+  planAnAlcoholFreeFallOuting,
   yourGlassOfWineMightBeMoreThanOneDrink,
   whatDoesAnAlcoholCravingFeelLike,
   youDontHaveToQuitForever,
