@@ -49,6 +49,7 @@ import yourGlassOfWineMightBeMoreThanOneDrink from "@/content/blog/your-glass-of
 import planAnAlcoholFreeFallOuting from "@/content/blog/plan-an-alcohol-free-fall-outing";
 import canCuttingBackAlcoholLowerBloodPressure from "@/content/blog/can-cutting-back-alcohol-lower-blood-pressure";
 import howToAskForSupportWhenChangingYourDrinking from "@/content/blog/how-to-ask-for-support-when-changing-your-drinking";
+import alcoholFreeHalloweenMovieNight from "@/content/blog/alcohol-free-halloween-movie-night";
 
 export type BlogSection =
   | {
@@ -121,7 +122,8 @@ export type BlogPost = {
 };
 
 export const blogPosts: BlogPost[] = [
-   howToAskForSupportWhenChangingYourDrinking,
+  alcoholFreeHalloweenMovieNight,
+  howToAskForSupportWhenChangingYourDrinking,
   canCuttingBackAlcoholLowerBloodPressure,
   planAnAlcoholFreeFallOuting,
   yourGlassOfWineMightBeMoreThanOneDrink,
