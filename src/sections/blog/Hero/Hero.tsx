@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section className={styles.hero}>
       <Image
-        src="/images/blog/nova-blog-header-october-2026.png"
+        src="/images/blog/nova-blog-header-november-2026.png"
 alt="A quiet coastal scene in warm October light for the Nova Blog."
         fill
         priority
