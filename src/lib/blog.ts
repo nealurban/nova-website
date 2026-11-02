@@ -52,6 +52,7 @@ import howToAskForSupportWhenChangingYourDrinking from "@/content/blog/how-to-as
 import alcoholFreeHalloweenMovieNight from "@/content/blog/alcohol-free-halloween-movie-night";
 import alcoholAndColdMedicine from "@/content/blog/can-you-drink-alcohol-while-taking-cold-medicine";
 import semaglutideAlcoholUseDisorderResearch from "@/content/blog/semaglutide-alcohol-use-disorder-research";
+import howToLeaveAPartyEarly from "@/content/blog/how-to-leave-a-party-early";
 
 export type BlogSection =
   | {
@@ -124,6 +125,7 @@ export type BlogPost = {
 };
 
 export const blogPosts: BlogPost[] = [
+  howToLeaveAPartyEarly,
   semaglutideAlcoholUseDisorderResearch,
   alcoholAndColdMedicine,
   alcoholFreeHalloweenMovieNight,
