@@ -53,6 +53,7 @@ import alcoholFreeHalloweenMovieNight from "@/content/blog/alcohol-free-hallowee
 import alcoholAndColdMedicine from "@/content/blog/can-you-drink-alcohol-while-taking-cold-medicine";
 import semaglutideAlcoholUseDisorderResearch from "@/content/blog/semaglutide-alcohol-use-disorder-research";
 import howToLeaveAPartyEarly from "@/content/blog/how-to-leave-a-party-early";
+import whyYouMayEatMoreAfterDrinking from "@/content/blog/why-you-may-eat-more-after-drinking";
 
 export type BlogSection =
   | {
@@ -125,6 +126,7 @@ export type BlogPost = {
 };
 
 export const blogPosts: BlogPost[] = [
+   whyYouMayEatMoreAfterDrinking,
   howToLeaveAPartyEarly,
   semaglutideAlcoholUseDisorderResearch,
   alcoholAndColdMedicine,
