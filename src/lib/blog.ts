@@ -54,6 +54,7 @@ import alcoholAndColdMedicine from "@/content/blog/can-you-drink-alcohol-while-t
 import semaglutideAlcoholUseDisorderResearch from "@/content/blog/semaglutide-alcohol-use-disorder-research";
 import howToLeaveAPartyEarly from "@/content/blog/how-to-leave-a-party-early";
 import whyYouMayEatMoreAfterDrinking from "@/content/blog/why-you-may-eat-more-after-drinking";
+import doesCookingWithWineRemoveAlcohol from "@/content/blog/does-cooking-with-wine-remove-alcohol";
 
 export type BlogSection =
   | {
@@ -126,6 +127,7 @@ export type BlogPost = {
 };
 
 export const blogPosts: BlogPost[] = [
+   doesCookingWithWineRemoveAlcohol,
    whyYouMayEatMoreAfterDrinking,
   howToLeaveAPartyEarly,
   semaglutideAlcoholUseDisorderResearch,
