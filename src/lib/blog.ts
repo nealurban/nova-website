@@ -55,6 +55,7 @@ import semaglutideAlcoholUseDisorderResearch from "@/content/blog/semaglutide-al
 import howToLeaveAPartyEarly from "@/content/blog/how-to-leave-a-party-early";
 import whyYouMayEatMoreAfterDrinking from "@/content/blog/why-you-may-eat-more-after-drinking";
 import doesCookingWithWineRemoveAlcohol from "@/content/blog/does-cooking-with-wine-remove-alcohol";
+import alcoholFreeFriendsgivingPotluck from "@/content/blog/alcohol-free-friendsgiving-potluck";
 
 export type BlogSection =
   | {
@@ -127,6 +128,7 @@ export type BlogPost = {
 };
 
 export const blogPosts: BlogPost[] = [
+   alcoholFreeFriendsgivingPotluck,
    doesCookingWithWineRemoveAlcohol,
    whyYouMayEatMoreAfterDrinking,
   howToLeaveAPartyEarly,
