@@ -57,6 +57,7 @@ import whyYouMayEatMoreAfterDrinking from "@/content/blog/why-you-may-eat-more-a
 import doesCookingWithWineRemoveAlcohol from "@/content/blog/does-cooking-with-wine-remove-alcohol";
 import alcoholFreeFriendsgivingPotluck from "@/content/blog/alcohol-free-friendsgiving-potluck";
 import heartRacingAfterAlcohol from "@/content/blog/why-is-my-heart-racing-after-drinking-alcohol";
+import whatHappensAfterAlcoholScreening from "@/content/blog/what-happens-after-alcohol-screening";
 
 export type BlogSection =
   | {
@@ -129,6 +130,7 @@ export type BlogPost = {
 };
 
 export const blogPosts: BlogPost[] = [
+  whatHappensAfterAlcoholScreening,
    heartRacingAfterAlcohol,
    alcoholFreeFriendsgivingPotluck,
    doesCookingWithWineRemoveAlcohol,
