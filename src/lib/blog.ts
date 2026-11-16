@@ -58,6 +58,7 @@ import doesCookingWithWineRemoveAlcohol from "@/content/blog/does-cooking-with-w
 import alcoholFreeFriendsgivingPotluck from "@/content/blog/alcohol-free-friendsgiving-potluck";
 import heartRacingAfterAlcohol from "@/content/blog/why-is-my-heart-racing-after-drinking-alcohol";
 import whatHappensAfterAlcoholScreening from "@/content/blog/what-happens-after-alcohol-screening";
+import canAlcoholMakeAcidRefluxWorse from "@/content/blog/can-alcohol-make-acid-reflux-worse";
 
 export type BlogSection =
   | {
@@ -130,6 +131,7 @@ export type BlogPost = {
 };
 
 export const blogPosts: BlogPost[] = [
+  canAlcoholMakeAcidRefluxWorse,
   whatHappensAfterAlcoholScreening,
    heartRacingAfterAlcohol,
    alcoholFreeFriendsgivingPotluck,
